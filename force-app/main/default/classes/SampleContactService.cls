@@ -73,6 +73,7 @@ public with sharing class SampleContactService {
 
             // Guard clauses
             if (req == null || req.leadIds == null || req.leadIds.isEmpty()) {
+                System.debug('SampleContactService class');
                 res.errors.add('No Lead Ids provided.');
                 res.errorCount = res.errors.size();
                 continue;
